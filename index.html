@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Understanding Student Success in MATH 200</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="math200_scrollytelling_files/libs/clipboard/clipboard.min.js"></script>
+<script src="math200_scrollytelling_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="math200_scrollytelling_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="math200_scrollytelling_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="math200_scrollytelling_files/libs/quarto-html/popper.min.js"></script>
+<script src="math200_scrollytelling_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="math200_scrollytelling_files/libs/quarto-html/anchor.min.js"></script>
+<link href="math200_scrollytelling_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="math200_scrollytelling_files/libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="math200_scrollytelling_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="math200_scrollytelling_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="math200_scrollytelling_files/libs/bootstrap/bootstrap-e9cf1033aae21d9ca5aa7876e56a779c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="math200_scrollytelling_files/libs/quarto-contrib/intersection-observer-polyfill-1.0.0/intersection-observer.js"></script>
+<script src="math200_scrollytelling_files/libs/quarto-contrib/scrollama-3.2.0/scrollama.min.js"></script>
+<script src="math200_scrollytelling_files/libs/quarto-contrib/closeread-0.1.0/closeread.js"></script>
+<meta cr-debug-mode="false">
+<meta cr-remove-header-space="false">
+
+
+<link rel="stylesheet" href="_extensions/qmd-lab/closeread/closeread.css">
+<link rel="stylesheet" href="math200_style.css">
+</head>
+
+<body class="quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-full">
+
+<main class="content column-page" id="quarto-document-content">
+      <!-- user-provided yaml closeread style options -->
+      <style>
+        :root {
+          --cr-narrative-background-color-overlay: #0d2448;
+--cr-section-background-color: #0b1d3a;
+--cr-narrative-text-color-overlay: #dce8ff;
+--cr-narrative-border-radius: 8px;
+--cr-narrative-overlay-max-width: 45%;
+        }
+      </style>
+    
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Understanding Student Success in MATH 200</h1>
+</div>
+
+
+
+<div class="quarto-title-meta column-page">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&amp;family=DM+Sans:wght@300;400;500&amp;family=DM+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<!-- ============================================================ -->
+<!--  OPENING -- centered, full width                              -->
+<!-- ============================================================ -->
+<div class="cr-section no-sidebar cr-column-screen sidebar-left">
+<div class="narrative-col">
+<div class="trigger">
+<div class="opening-wrap narrative">
+<p class="hero-text">
+What actually predicts success in <span class="accent">MATH 200?</span>
+</p>
+<p class="opening-sub">
+Using student records spanning over a decade, we explored three questions about the course that determines whether students move forward in mathematics.
+</p>
+<div class="three-questions">
+<div class="q-chip" data-n="01">
+Does taking MATH 199 first make a difference?
+</div>
+<div class="q-chip" data-n="02">
+Is there a grade in MATH 199 that predicts success?
+</div>
+<div class="q-chip" data-n="03">
+How has performance shifted over time – and what happens to students who retake?
+</div>
+</div>
+<p class="scroll-cue">
+Scroll to explore
+</p>
+</div>
+</div>
+</div>
+<div class="sticky-col">
+<div class="sticky-col-stack">
+
+</div>
+</div>
+</div>
+<!-- ============================================================ -->
+<!--  QUESTION 1 -- INTRO centered, full width                    -->
+<!-- ============================================================ -->
+<div class="cr-section no-sidebar cr-column-screen sidebar-left">
+<div class="narrative-col">
+<div class="trigger">
+<div class="centered-intro narrative">
+<p><span class="section-pill">Question 01</span></p>
+<p class="q-heading">
+What happens to a student’s grade in MATH 200 if they were placed higher but chose to take MATH 199 first?
+</p>
+<p class="intro-body">
+We expected the extra preparation to help – that students who voluntarily stepped back to take MATH 199 first would outperform those who entered MATH 200 directly.
+</p>
+<div class="note-box">
+<p><span class="note-label">A note on grade groupings</span> <strong>A and A-</strong> are combined. <strong>B-, B, and B+</strong> are combined. Grouping similar grades together helps us see the bigger picture without getting lost in the details. <br><br> <strong>C</strong> and <strong>C-</strong> are kept separate, because that boundary is where passing starts to get shaky. <br><br> <strong>W means withdrawal</strong> – a student who started MATH 200 but did not finish.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sticky-col">
+<div class="sticky-col-stack">
+
+</div>
+</div>
+</div>
+<!-- ============================================================ -->
+<!--  QUESTION 1 -- CHART sidebar                                 -->
+<!-- ============================================================ -->
+<div class="cr-section cr-column-screen sidebar-left">
+<div class="narrative-col">
+<div class="trigger">
+<div class="narrative">
+<p>Here is how the two groups compare across every grade outcome in MATH 200. <strong>Red</strong> = students who went directly into MATH 200. <strong>Blue</strong> = students who took MATH 199 first, even though they were placed higher.</p>
+</div>
+</div>
+<div class="trigger new-trigger" data-focus-on="cr-q1">
+<div class="narrative">
+
+</div>
+</div>
+<div class="trigger">
+<div class="narrative">
+<p>At the top of the grade range – the <strong>A and B columns</strong> – the two groups look almost identical. Students who took MATH 199 first performed just as well, or slightly better, at the A and B level. The extra preparation did not hold them back.</p>
+</div>
+</div>
+<div class="trigger new-trigger" data-pan-to="-30%,0%" data-focus-on="cr-q1" data-scale-by="1.6">
+<div class="narrative">
+
+</div>
+</div>
+<div class="trigger">
+<div class="narrative">
+<p>Now look at the <strong>C column.</strong> Direct entry students are more likely to land at a C – the floor of passing. Students who took MATH 199 first are less likely to end up here.</p>
+</div>
+</div>
+<div class="trigger new-trigger" data-pan-to="10%,0%" data-focus-on="cr-q1" data-scale-by="1.8">
+<div class="narrative">
+
+</div>
+</div>
+<div class="trigger">
+<div class="narrative">
+<p>Look at the <strong>W column</strong> – withdrawals. Direct entry students withdraw at a slightly higher rate. It is a small difference, but it points in the same direction as everything else we are seeing.</p>
+</div>
+</div>
+<div class="trigger new-trigger" data-pan-to="45%,0%" data-focus-on="cr-q1" data-scale-by="2">
+<div class="narrative">
+
+</div>
+</div>
+<div class="trigger">
+<div class="narrative">
+<p>The caveat to this is that while the two groups may be very similar overall, most foundational students are getting higher than a C – while direct entry students are getting more Cs and more withdrawals. Taking a step back to build foundations did not hurt these students. For many, it quietly shifted their grades upward.</p>
+</div>
+</div>
+<div class="trigger new-trigger" data-focus-on="cr-q1">
+<div class="narrative">
+
+</div>
+</div>
+<div class="trigger">
+<div class="narrative">
+<p class="bridge">
+</p></div>
+</div>
+<div class="trigger">
+<div class="narrative">
+So taking MATH 199 first seems to help. But does how well you do in MATH 199 matter?
+</div>
+</div>
+<div class="trigger">
+<div class="narrative">
+<p></p>
+</div>
+</div>
+</div>
+<div class="sticky-col">
+<div class="sticky-col-stack">
+<div id="cr-q1" class="sticky">
+<p><img src="q1_grade_distribution.png" class="img-fluid"></p>
+</div>
+</div>
+</div>
+</div>
+<!-- ============================================================ -->
+<!--  QUESTION 2 -- INTRO centered, full width                    -->
+<!-- ============================================================ -->
+<div class="cr-section no-sidebar cr-column-screen sidebar-left">
+<div class="narrative-col">
+<div class="trigger">
+<div class="centered-intro narrative">
+<p><span class="section-pill">Question 02</span></p>
+<p class="q-heading">
+Is there a specific grade in MATH 199 that reliably predicts success in MATH 200?
+</p>
+<p class="intro-body">
+We expected that earning a B or higher in MATH 199 would be a good sign. But the data told a more specific story – and it changed how we grouped the grades.
+</p>
+<div class="note-box">
+<p><span class="note-label">Why B- stands alone</span> In Question 1, we combined B-, B, and B+ into one group because they told a similar story. But for this question, that grouping would have hidden something important. <br><br> When we looked at pass rates after earning a B- vs.&nbsp;a B or B+, the difference was too large to ignore. <strong>B- stands on its own here.</strong> Grouping similar grades helps – but only when those grades are telling the same story. Here, they were not.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sticky-col">
+<div class="sticky-col-stack">
+
+</div>
+</div>
+</div>
+<!-- ============================================================ -->
+<!--  QUESTION 2 -- CHART sidebar                                 -->
+<!-- ============================================================ -->
+<div class="cr-section cr-column-screen sidebar-left">
+<div class="narrative-col">
+<div class="trigger new-trigger" data-focus-on="cr-q2">
+<div class="narrative">
+
+</div>
+</div>
+<div class="trigger">
+<div class="narrative">
+<p>This chart shows the share of students who passed MATH 200 – earning a C or better – based on their most recent grade in MATH 199. The higher the bar, the better the outcome.</p>
+</div>
+</div>
+<div class="trigger new-trigger" data-pan-to="30%,0%" data-focus-on="cr-q2" data-scale-by="1.8">
+<div class="narrative">
+
+</div>
+</div>
+<div class="trigger">
+<div class="narrative">
+<p><span class="stat-pop">91%</span> <span class="stat-label">of A/A- students passed MATH 200 &nbsp;(n = 147)</span></p>
+</div>
+</div>
+<div class="trigger">
+<div class="narrative">
+<p>That is the strongest signal in the dataset – nearly 9 out of 10 students in this group went on to pass. With 147 students behind it, this is the largest and most reliable group.</p>
+</div>
+</div>
+<div class="trigger new-trigger" data-pan-to="-42%,-20%" data-focus-on="cr-q2" data-scale-by="1.8">
+<div class="narrative">
+
+</div>
+</div>
+<div class="trigger">
+<div class="narrative">
+<p><span class="stat-pop">85%</span> <span class="stat-label">of B+/B students passed MATH 200 &nbsp;(n = 92)</span></p>
+</div>
+</div>
+<div class="trigger">
+<div class="narrative">
+<p>The picture shifts meaningfully for students earning a <strong>B+ or B</strong> – but still in a good direction. Both groups sit comfortably above the 75% reliability threshold used in this analysis.</p>
+</div>
+</div>
+<div class="trigger new-trigger" data-pan-to="-60%,0%" data-focus-on="cr-q2" data-scale-by="1.8">
+<div class="narrative">
+
+</div>
+</div>
+<div class="trigger">
+<div class="cliff-block narrative">
+<p><span class="cliff-label">Warning signal</span> Then something happens at the <strong>B-.</strong> The pass rate drops sharply – from 85% all the way down to <strong>55%.</strong> That is not a gradual slide. That is a cliff. <br><br> This is exactly why B- could not be grouped with B and B+. A student earning a B- in MATH 199 is in a fundamentally different position than a student earning a B.</p>
+</div>
+</div>
+<div class="trigger new-trigger" data-pan-to="-80%,0%" data-focus-on="cr-q2" data-scale-by="1.8">
+<div class="narrative">
+
+</div>
+</div>
+<div class="trigger">
+<div class="narrative">
+<p><span class="stat-pop">48%</span> <span class="stat-label">of C+ students passed MATH 200 &nbsp;(n = 25)</span></p>
+</div>
+</div>
+<div class="trigger">
+<div class="narrative">
+<p>Less than half. Below the B- and well below the 75% threshold. Worth noting: 25 students is the smallest group in the chart, so this estimate carries more uncertainty.</p>
+</div>
+</div>
+<div class="trigger new-trigger" data-pan-to="-100%,0%" data-focus-on="cr-q2" data-scale-by="1.8">
+<div class="narrative">
+
+</div>
+</div>
+<div class="trigger">
+<div class="narrative">
+<p><span class="stat-pop">55%</span> <span class="stat-label">of C students passed MATH 200 &nbsp;(n = 51)</span></p>
+</div>
+</div>
+<div class="trigger">
+<div class="narrative">
+<p>Despite earning a lower grade in MATH 199, this group performed similarly to B- students in MATH 200. The caveat to this is that 51 students is a modest sample size.</p>
+</div>
+</div>
+<div class="trigger new-trigger" data-pan-to="42%,0%" data-focus-on="cr-q2" data-scale-by="1.8">
+<div class="narrative">
+
+</div>
+</div>
+<div class="trigger">
+<div class="narrative">
+<p>The picture is clear. Students who earned a <strong>B or higher</strong> in MATH 199 passed MATH 200 at rates well above 75%. Students who earned a <strong>B- or lower</strong> did not. For advisors, this is the simplest evidence-based tool in the data.</p>
+</div>
+</div>
+<div class="trigger new-trigger" data-focus-on="cr-q2">
+<div class="narrative">
+
+</div>
+</div>
+<div class="trigger">
+<div class="narrative">
+<p class="bridge">
+</p></div>
+</div>
+<div class="trigger">
+<div class="narrative">
+So we know taking MATH 199 helps, and how well you do in it matters. But has any of this changed over time?
+</div>
+</div>
+<div class="trigger">
+<div class="narrative">
+<p></p>
+</div>
+</div>
+</div>
+<div class="sticky-col">
+<div class="sticky-col-stack">
+<div id="cr-q2" class="sticky">
+<p><img src="q2_pass_rates.png" class="img-fluid"></p>
+</div>
+</div>
+</div>
+</div>
+<!-- ============================================================ -->
+<!--  QUESTION 3a -- INTRO centered, full width                   -->
+<!-- ============================================================ -->
+<div class="cr-section no-sidebar cr-column-screen sidebar-left">
+<div class="narrative-col">
+<div class="trigger">
+<div class="centered-intro narrative">
+<p><span class="section-pill">Question 03</span></p>
+<p class="q-heading">
+Which academic years showed the strongest average grades in MATH 200?
+</p>
+<p class="intro-body">
+We expected some year-to-year variation – different cohorts, different instructors, and external factors like the pandemic. Here is what the data actually showed across eleven academic years.
+</p>
+<div class="note-box">
+<p><span class="note-label">What this chart measures</span> Each bar represents the <strong>average GPA</strong> of students in that academic year, based on their most recent MATH 200 grade. For students who took the course only once, that is their final grade. For retakers, that is the grade from their most recent attempt. <br><br> The <strong>dark blue</strong> bar flags the pandemic year. The <strong>red</strong> bar flags the current year, which may still be in progress.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sticky-col">
+<div class="sticky-col-stack">
+
+</div>
+</div>
+</div>
+<!-- ============================================================ -->
+<!--  QUESTION 3a -- CHART sidebar                                -->
+<!-- ============================================================ -->
+<div class="cr-section cr-column-screen sidebar-left">
+<div class="narrative-col">
+<div class="trigger">
+<div class="narrative">
+<p>Here is MATH 200 average GPA across every academic year from 2015-16 through 2025-26. Take a moment to notice the overall shape – most bars are sitting close together, with a few clear exceptions.</p>
+</div>
+</div>
+<div class="trigger new-trigger" data-scale-by="1.3" data-focus-on="cr-q3a">
+<div class="narrative">
+
+</div>
+</div>
+<div class="trigger">
+<div class="narrative">
+<p>In the five years before the pandemic – <strong>2015-16 through 2019-20</strong> – average MATH 200 GPA ranged from <strong>2.81 to 3.03.</strong> The numbers move around a little year to year, but they are all telling the same story. This is what a normal baseline looks like.</p>
+</div>
+</div>
+<div class="trigger new-trigger" data-pan-to="-55%,0%" data-focus-on="cr-q3a" data-scale-by="1.9">
+<div class="narrative">
+
+</div>
+</div>
+<div class="trigger">
+<div class="narrative">
+<p>Then came <strong>2020-21.</strong></p>
+</div>
+</div>
+<div class="trigger">
+<div class="narrative">
+<p><span class="stat-pop">3.29</span> <span class="stat-label">Highest average GPA in the entire dataset</span></p>
+</div>
+</div>
+<div class="trigger">
+<div class="narrative">
+<p>This coincides with the shift to remote and hybrid learning during COVID-19, which may have altered grading practices or student study habits. This year stands clearly apart from everything before and after it.</p>
+</div>
+</div>
+<div class="trigger new-trigger" data-pan-to="-65%,0%" data-focus-on="cr-q3a" data-scale-by="2.2">
+<div class="narrative">
+
+</div>
+</div>
+<div class="trigger">
+<div class="narrative">
+<p>The following year, <strong>2021-22</strong>, GPA dropped back down to <strong>2.82</strong> – nearly returning to the pre-pandemic baseline almost immediately. The pandemic spike did not carry forward.</p>
+</div>
+</div>
+<div class="trigger new-trigger" data-pan-to="-95%,0%" data-focus-on="cr-q3a" data-scale-by="2.2">
+<div class="narrative">
+
+</div>
+</div>
+<div class="trigger">
+<div class="narrative">
+<p><strong>2022-23 and 2023-24</strong> both performed above the long-run average at <strong>3.13 and 3.04.</strong> These were the two strongest non-pandemic years in the dataset – a solid two-year stretch.</p>
+</div>
+</div>
+<div class="trigger new-trigger" data-pan-to="-100%,0%" data-focus-on="cr-q3a" data-scale-by="2">
+<div class="narrative">
+
+</div>
+</div>
+<div class="trigger">
+<div class="narrative">
+<p><strong>2025-26</strong> currently sits at the lowest recorded average of <strong>2.72.</strong> This year may still be in progress, and the final figures could shift.</p>
+</div>
+</div>
+<div class="trigger new-trigger" data-pan-to="48%,0%" data-focus-on="cr-q3a" data-scale-by="2.2">
+<div class="narrative">
+
+</div>
+</div>
+<div class="trigger">
+<div class="narrative">
+<p>Across all eleven years, average MATH 200 GPA clustered closely around <strong>3.0</strong> – a sign of generally consistent student performance over time. Two years stand out: <strong>2020-21</strong> as a likely pandemic artifact, and <strong>2025-26</strong> as a number still being written.</p>
+</div>
+</div>
+<div class="trigger new-trigger" data-scale-by="1.5" data-focus-on="cr-q3a">
+<div class="narrative">
+
+</div>
+</div>
+<div class="trigger">
+<div class="narrative">
+<p class="bridge">
+</p></div>
+</div>
+<div class="trigger">
+<div class="narrative">
+What about the students who did not pass the first time and came back to try again? Let us look at those 160 students next.
+</div>
+</div>
+<div class="trigger">
+<div class="narrative">
+<p></p>
+</div>
+</div>
+</div>
+<div class="sticky-col">
+<div class="sticky-col-stack">
+<div id="cr-q3a" class="sticky">
+<p><img src="q3_yearly_gpa.png" class="img-fluid"></p>
+</div>
+</div>
+</div>
+</div>
+<!-- ============================================================ -->
+<!--  QUESTION 3b -- INTRO centered, full width                   -->
+<!-- ============================================================ -->
+<div class="cr-section no-sidebar cr-column-screen sidebar-left">
+<div class="narrative-col">
+<div class="trigger">
+<div class="centered-intro narrative">
+<p><span class="section-pill">Question 03 – Retakers</span></p>
+<p class="q-heading">
+Who were the students who retook MATH 200?
+</p>
+<p class="intro-body">
+<strong>160 students</strong> in this dataset retook MATH 200 after not passing the first time. Before we look at whether retaking helped them, we need to ask: who were these students? How badly did they struggle the first time?
+</p>
+<div class="note-box">
+<p><span class="note-label">A note on sample sizes</span> Each bar shows the average first-attempt GPA for students who later retook MATH 200, broken out by academic year. Sample sizes are small – n=4, n=8, n=11 inside the bars. <br><br> We are looking at patterns across years rather than treating any single bar as a definitive number. With counts this small, a year’s average can shift a lot from just one or two students. <br><br> The <strong>dark blue</strong> bar flags 2020-21. The <strong>red</strong> bar flags the most recent cohort.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sticky-col">
+<div class="sticky-col-stack">
+
+</div>
+</div>
+</div>
+<!-- ============================================================ -->
+<!--  QUESTION 3b -- CHART sidebar                                -->
+<!-- ============================================================ -->
+<div class="cr-section cr-column-screen sidebar-left">
+<div class="narrative-col">
+<div class="trigger">
+<div class="narrative">
+<p>Here is the average first-attempt GPA for students who retook MATH 200, year by year. Notice where these bars sit on the scale – all of them are well below 2.0. These are not students who narrowly missed passing. They genuinely struggled the first time through.</p>
+</div>
+</div>
+<div class="trigger new-trigger" data-focus-on="cr-q3b">
+<div class="narrative">
+
+</div>
+</div>
+<div class="trigger">
+<div class="narrative">
+<p>In the earlier years – <strong>2015-16 through 2018-19</strong> – retakers had first-attempt GPAs ranging from <strong>1.28 to 1.47.</strong> Consistently low, but fairly stable. This gives us a rough baseline for what a typical retaker looked like before the pandemic.</p>
+</div>
+</div>
+<div class="trigger new-trigger" data-pan-to="-30%,0%" data-focus-on="cr-q3b" data-scale-by="1.0">
+<div class="narrative">
+
+</div>
+</div>
+<div class="trigger">
+<div class="narrative">
+<p>Through <strong>2019-20, 2020-21, and 2021-22</strong>, the first-attempt GPAs stayed in a similar range – <strong>1.15 to 1.25.</strong> Even during the pandemic year, the retakers who came back had performed similarly poorly the first time.</p>
+</div>
+</div>
+<div class="trigger new-trigger" data-pan-to="-95%,0%" data-focus-on="cr-q3b" data-scale-by="1.2">
+<div class="narrative">
+
+</div>
+</div>
+<div class="trigger">
+<div class="cliff-block narrative">
+<p><span class="cliff-label">Worth watching</span> <strong>2024-25</strong> sits at the lowest first-attempt average in the entire dataset at <strong>0.93.</strong> Below a 1.0 – meaning the average retaker in this cohort earned less than a D on their first attempt. With only <strong>4 students</strong> in this group, we cannot call it a trend yet. But it is the lowest number in ten years of data.</p>
+</div>
+</div>
+<div class="trigger new-trigger" data-pan-to="0%,0%" data-focus-on="cr-q3b" data-scale-by="1.0">
+<div class="narrative">
+
+</div>
+</div>
+<div class="trigger">
+<div class="narrative">
+<p>Across the full dataset, students who retook MATH 200 had first-attempt GPAs that consistently hovered in the <strong>1.0-1.5 range</strong> – a pattern that has held for a decade. These are not borderline cases. They are students who hit a real wall the first time through.</p>
+</div>
+</div>
+<div class="trigger new-trigger" data-focus-on="cr-q3b">
+<div class="narrative">
+
+</div>
+</div>
+<div class="trigger">
+<div class="narrative">
+<p class="bridge">
+</p></div>
+</div>
+<div class="trigger">
+<div class="narrative">
+But here is the question that matters: when they came back and tried again, did it work?
+</div>
+</div>
+<div class="trigger">
+<div class="narrative">
+<p></p>
+</div>
+</div>
+</div>
+<div class="sticky-col">
+<div class="sticky-col-stack">
+<div id="cr-q3b" class="sticky">
+<p><img src="q3_first_attempt.png" class="img-fluid"></p>
+</div>
+</div>
+</div>
+</div>
+<!-- ============================================================ -->
+<!--  QUESTION 3c -- INTRO centered, full width                   -->
+<!-- ============================================================ -->
+<div class="cr-section no-sidebar cr-column-screen sidebar-left">
+<div class="narrative-col">
+<div class="trigger">
+<div class="centered-intro narrative">
+<p><span class="section-pill">Question 03 – Did Retaking Help?</span></p>
+<p class="q-heading">
+After struggling the first time, what happened when these students came back?
+</p>
+<p class="intro-body">
+This chart shows the <strong>most recent GPA</strong> for students who retook MATH 200, by the academic year they retook it. If the previous chart showed where they started, this chart shows where they landed.
+</p>
+</div>
+</div>
+</div>
+<div class="sticky-col">
+<div class="sticky-col-stack">
+
+</div>
+</div>
+</div>
+<!-- ============================================================ -->
+<!--  QUESTION 3c -- CHART sidebar                                -->
+<!-- ============================================================ -->
+<div class="cr-section cr-column-screen sidebar-left">
+<div class="narrative-col">
+<div class="trigger">
+<div class="narrative">
+<p>Here is where retakers landed after coming back. Compare where these bars sit – between <strong>2.0 and 2.75</strong> – to where the previous chart sat – between <strong>0.93 and 1.47.</strong> Students came in struggling and left in a genuinely different place.</p>
+</div>
+</div>
+<div class="trigger new-trigger" data-focus-on="cr-q3c">
+<div class="narrative">
+
+</div>
+</div>
+<div class="trigger">
+<div class="narrative">
+<p>In the earliest years, retakers finished with GPAs of <strong>2.48, 2.51, and 2.38.</strong> <strong>2017-18 had the largest single-year sample at 18 students</strong> – the most reliable estimate in the earlier data.</p>
+</div>
+</div>
+<div class="trigger new-trigger" data-pan-to="-30%,0%" data-focus-on="cr-q3c" data-scale-by="1.0">
+<div class="narrative">
+
+</div>
+</div>
+<div class="trigger">
+<div class="narrative">
+<p><strong>2018-19 and 2019-20</strong> were the strongest retaker years in the pre-pandemic period – <strong>2.73 and 2.75</strong> respectively. Students who retook in these years made the biggest improvements we see in the earlier data.</p>
+</div>
+</div>
+<div class="trigger new-trigger" data-pan-to="-50%,0%" data-focus-on="cr-q3c" data-scale-by="1.0">
+<div class="narrative">
+
+</div>
+</div>
+<div class="trigger">
+<div class="narrative">
+<p><strong>2021-22</strong> brought in the largest post-pandemic sample – <strong>15 students</strong> – with an average of <strong>2.52.</strong> A solid and reliable data point. Retakers from this year improved meaningfully from their first attempts.</p>
+</div>
+</div>
+<div class="trigger new-trigger" data-pan-to="-60%,0%" data-focus-on="cr-q3c" data-scale-by="1.0">
+<div class="narrative">
+
+</div>
+</div>
+<div class="trigger">
+<div class="narrative">
+<p><strong>2022-23 and 2023-24</strong> are two of the most data-rich recent years – <strong>10 and 14 students</strong> – with averages of <strong>2.74 and 2.69.</strong> Strong results. Students who retook in these years recovered well, finishing close to the overall MATH 200 course average.</p>
+</div>
+</div>
+<div class="trigger new-trigger" data-pan-to="-80%,0%" data-focus-on="cr-q3c" data-scale-by="1.0">
+<div class="narrative">
+
+</div>
+</div>
+<div class="trigger">
+<div class="narrative">
+<p><strong>2024-25</strong> dips slightly to <strong>2.33</strong> – still a real improvement over a first-attempt average around 1.0-1.4, but noticeably lower than the two years before it. With <strong>14 students</strong>, this is a reliable estimate.</p>
+</div>
+</div>
+<div class="trigger new-trigger" data-pan-to="-90%,0%" data-focus-on="cr-q3c" data-scale-by="1">
+<div class="narrative">
+
+</div>
+</div>
+<div class="trigger">
+<div class="narrative">
+<p><strong>2025-26</strong> currently sits at <strong>2.00</strong> – but with only <strong>one student</strong> who has completed a retake so far, this number is essentially a placeholder. The bar is red as a flag, not a finding.</p>
+</div>
+</div>
+<div class="trigger new-trigger" data-pan-to="0%,0%" data-focus-on="cr-q3c" data-scale-by="1.0">
+<div class="narrative">
+
+</div>
+</div>
+<div class="trigger">
+<div class="narrative">
+<p>Students who retook MATH 200 came in with first-attempt GPAs in the <strong>1.0-1.5 range.</strong> After retaking, they landed in the <strong>2.3-2.75 range.</strong> That is a real and consistent improvement across a decade of data. <strong>Retaking MATH 200 works.</strong> Students who struggled the first time and came back genuinely improved. The course is recoverable.</p>
+</div>
+</div>
+<div class="trigger new-trigger" data-focus-on="cr-q3c">
+<div class="narrative">
+
+</div>
+</div>
+</div>
+<div class="sticky-col">
+<div class="sticky-col-stack">
+<div id="cr-q3c" class="sticky">
+<p><img src="q3_after_retake.png" class="img-fluid"></p>
+</div>
+</div>
+</div>
+</div>
+<!-- ============================================================ -->
+<!--  CONCLUSION -- centered, full width                          -->
+<!-- ============================================================ -->
+<div class="cr-section no-sidebar cr-column-screen sidebar-left">
+<div class="narrative-col">
+<div class="trigger">
+<div class="centered-intro narrative">
+<p class="hero-text">
+One theme emerges clearly across all three findings.
+</p>
+<p class="hero-text">
+<span class="accent">Structured preparation predicts success in MATH 200.</span>
+</p>
+<div class="takeaway-grid">
+<div class="takeaway-card">
+<span class="card-number">Finding 01</span>
+<p>
+Taking MATH 199 first – even when placed higher – quietly improves grade outcomes. Foundational students end up with fewer Cs, fewer withdrawals, and more Bs.
+</p>
+</div>
+<div class="takeaway-card">
+<span class="card-number">Finding 02</span>
+<p>
+How well a student does in MATH 199 matters. The <strong>B- threshold</strong> is the clearest signal in the dataset. Students earning a B- or lower pass MATH 200 at rates around 55% or below – essentially a coin flip. They deserve a proactive advising conversation before enrolling.
+</p>
+</div>
+<div class="takeaway-card">
+<span class="card-number">Finding 03</span>
+<p>
+Students who struggle and come back do recover. A decade of retaker data shows consistent improvement – from first-attempt GPAs around 1.0-1.5, up to most recent GPAs around 2.3-2.75. The course is hard, but it is not a dead end.
+</p>
+</div>
+</div>
+<p class="closing-statement">
+For advisors, the simplest evidence-based tool in this data is the <strong>B- threshold in MATH 199</strong> – a straightforward way to identify which students are ready and which deserve a conversation before enrolling.
+</p>
+</div>
+</div>
+</div>
+<div class="sticky-col">
+<div class="sticky-col-stack">
+
+</div>
+</div>
+</div>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
