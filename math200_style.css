@@ -1,0 +1,394 @@
+/* ============================================================
+   MATH 200 Scrollytelling — Scholarly Broadsheet
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+/* ── Design Tokens ── */
+:root {
+  --bg:        #F9F7F2;
+  --bg-tint:   #F2EFE6;
+  --bg-rose:   #FBF5F5;
+  --text:      #100F0D;
+  --text-mid:  #4A4640;
+  --text-muted:#8C8680;
+  --crimson:   #9B1D28;
+  --gold:      #8B6914;
+  --border:    #DDD8CE;
+  --border-xs: #EAE6DC;
+}
+
+/* ── Global resets ── */
+*, *::before, *::after { box-sizing: border-box; }
+
+/* ── Base ── */
+body,
+.quarto-container {
+  background: var(--bg) !important;
+  color: var(--text);
+  font-family: 'EB Garamond', Georgia, 'Times New Roman', serif;
+  font-size: 19px;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* ── Closeread section backgrounds — strip all dark defaults ── */
+.cr-section,
+.cr-section-wrap,
+[class*="cr-section"],
+.sticky-col-stack,
+.cr-sticky-col,
+.cr-col,
+main,
+.quarto-container main {
+  background: var(--bg) !important;
+  background-color: var(--bg) !important;
+}
+
+/* ── Narrative panel — NO box, clean open text ── */
+.narrative-col,
+.narrative-overlay,
+.narrative,
+.cr-narrative,
+[class*="narrative-overlay"],
+[class*="narrative-col"] {
+  background: rgba(249, 247, 242, 0.97) !important;
+  background-color: rgba(249, 247, 242, 0.97) !important;
+  color: var(--text) !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+/* ── Narrative typography ── */
+.narrative {
+  font-family: 'EB Garamond', Georgia, 'Times New Roman', serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.80;
+  color: var(--text);
+}
+
+.narrative p,
+.narrative-overlay p {
+  margin-bottom: 1.2rem;
+  color: var(--text) !important;
+}
+
+.narrative strong,
+.narrative-overlay strong {
+  font-weight: 600;
+  color: var(--text) !important;
+}
+
+.narrative em,
+.narrative-overlay em {
+  font-style: italic;
+  color: var(--text-mid);
+}
+
+/* ── Hero text ── */
+.hero-text {
+  font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  font-size: 3.2rem;
+  font-weight: 300;
+  line-height: 1.18;
+  color: var(--text);
+  margin-bottom: 1.4rem;
+  letter-spacing: -0.015em;
+}
+
+.hero-text span.accent {
+  color: var(--crimson);
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* ── Question heading ── */
+.q-heading {
+  font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--text);
+  margin-bottom: 1.1rem;
+  line-height: 1.38;
+  padding-left: 1rem;
+  border-left: 2.5px solid var(--crimson);
+}
+
+/* ── Section pill — no filled background, just a label ── */
+.section-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: 'IBM Plex Mono', 'Courier New', monospace;
+  font-size: 0.62rem;
+  font-weight: 500;
+  letter-spacing: 0.20em;
+  text-transform: uppercase;
+  color: var(--crimson);
+  margin-bottom: 1.1rem;
+}
+
+.section-pill::before {
+  content: '';
+  display: inline-block;
+  width: 28px;
+  height: 1.5px;
+  background: var(--crimson);
+  flex-shrink: 0;
+}
+
+/* ── Note box — left rule only, no surrounding box ── */
+.note-box {
+  background: var(--bg-tint);
+  border: none;
+  border-left: 2.5px solid var(--gold);
+  padding: 0.85rem 1.2rem;
+  margin: 1.1rem 0;
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 1.2rem;
+  color: var(--text-mid);
+  line-height: 1.80;
+}
+
+.note-box strong {
+  color: var(--text) !important;
+  font-weight: 600;
+}
+
+.note-label {
+  font-family: 'IBM Plex Mono', 'Courier New', monospace;
+  font-size: 0.57rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* ── Stat callout — large, journalistic pull-quote ── */
+.stat-pop {
+  font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  font-size: 5rem;
+  font-weight: 600;
+  color: var(--crimson);
+  line-height: 1;
+  display: block;
+  margin-bottom: 0.05rem;
+  letter-spacing: -0.03em;
+}
+
+.stat-label {
+  font-family: 'IBM Plex Mono', 'Courier New', monospace;
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  display: block;
+  margin-bottom: 1.3rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-xs);
+}
+
+/* ── Cliff / warning block — left rule only ── */
+.cliff-block {
+  background: var(--bg-rose);
+  border: none;
+  border-left: 2.5px solid var(--crimson);
+  padding: 0.85rem 1.2rem;
+  margin: 1.1rem 0;
+  font-family: 'EB Garamond', Georgia, serif;
+  color: var(--text-mid);
+  line-height: 1.80;
+  font-size: 1.0rem;
+}
+
+.cliff-label {
+  font-family: 'IBM Plex Mono', 'Courier New', monospace;
+  font-size: 1rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--crimson);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.cliff-block strong {
+  color: var(--text) !important;
+  font-weight: 600;
+}
+
+/* ── Transition bridge ── */
+.bridge {
+  font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  font-style: italic;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border);
+  padding-top: 1.1rem;
+  margin-top: 1.6rem;
+  line-height: 1.6;
+}
+
+/* ── Opening screen ── */
+.opening-wrap {
+  min-height: 65vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem 0 2rem;
+}
+
+.opening-sub {
+  font-family: 'EB Garamond', Georgia, 'Times New Roman', serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--text-mid);
+  line-height: 1.85;
+  max-width: 46ch;
+  margin-bottom: 2.2rem;
+}
+
+.three-questions {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin: 1.2rem 0 1.8rem;
+  border-top: 1px solid var(--border);
+}
+
+.q-chip {
+  font-family: 'EB Garamond', Georgia, 'Times New Roman', serif;
+  font-size: 1.05rem;
+  color: var(--text-mid);
+  padding: 0.65rem 0;
+  border-bottom: 1px solid var(--border-xs);
+  display: flex;
+  align-items: baseline;
+  gap: 0.8rem;
+}
+
+.q-chip::before {
+  content: attr(data-n);
+  font-family: 'IBM Plex Mono', 'Courier New', monospace;
+  color: var(--crimson);
+  font-size: 0.58rem;
+  letter-spacing: 0.10em;
+  flex-shrink: 0;
+}
+
+/* ── Scroll cue ── */
+.scroll-cue {
+  font-family: 'IBM Plex Mono', 'Courier New', monospace;
+  font-size: 0.60rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-top: 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.scroll-cue::after {
+  content: '';
+  display: inline-block;
+  width: 1px;
+  height: 32px;
+  background: linear-gradient(to bottom, var(--text-muted), transparent);
+  vertical-align: middle;
+}
+
+/* ── Takeaway cards — minimal, no box feel ── */
+.takeaway-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin: 1.4rem 0;
+  border-top: 1px solid var(--border);
+}
+
+.takeaway-card {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--border-xs);
+  border-radius: 0;
+  padding: 1.1rem 0 1.1rem 1.2rem;
+  position: relative;
+  overflow: visible;
+  box-shadow: none;
+}
+
+.takeaway-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: var(--crimson);
+}
+
+.card-number {
+  font-family: 'IBM Plex Mono', 'Courier New', monospace;
+  font-size: 0.57rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--crimson);
+  display: block;
+  margin-bottom: 0.35rem;
+}
+
+.takeaway-card p {
+  margin: 0;
+  color: var(--text-mid);
+  font-family: 'EB Garamond', Georgia, 'Times New Roman', serif;
+  font-size: 1.05rem;
+  line-height: 1.72;
+}
+
+.takeaway-card strong {
+  color: var(--text) !important;
+  font-weight: 600;
+}
+
+/* ── Closing statement ── */
+.closing-statement {
+  font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  font-size: 1.3rem;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--text-mid);
+  border-top: 1px solid var(--border);
+  padding-top: 1.4rem;
+  margin-top: 1.6rem;
+  line-height: 1.68;
+}
+
+.closing-statement strong {
+  color: var(--crimson) !important;
+  font-style: normal;
+  font-weight: 600;
+}
+
+/* ── Section divider ── */
+hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 1.2rem 0;
+}
+
+/* ── Sticky image ── */
+.cr-sticky img {
+  border-radius: 2px;
+  box-shadow: 0 4px 32px rgba(16, 15, 13, 0.12), 0 1px 4px rgba(16, 15, 13, 0.08);
+  max-width: 100%;
+  width: 65%;
+  height: 65%;
+  display: block;
+  margin: 0 auto;
+}
